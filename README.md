@@ -2,6 +2,10 @@
 
 This public repository hosts Windows release files for Syntax Forge. The source project is maintained separately in a private repository.
 
+## Website
+
+Visit **[n3try.github.io/syntax-forge-downloads](https://n3try.github.io/syntax-forge-downloads/)** to view the courses, download the installer, or open an installed copy of Syntax Forge.
+
 ## Download
 
 The recommended download is the small web installer:
