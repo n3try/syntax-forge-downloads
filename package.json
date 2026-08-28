@@ -1,0 +1,17 @@
+{
+  "name": "syntax-forge-downloads",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:html && npm run test:accessibility",
+    "test:html": "html-validate index.html privacy.html terms.html accessibility.html",
+    "test:accessibility": "playwright test tests/accessibility.spec.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "html-validate": "11.10.0",
+    "http-server": "14.1.1"
+  }
+}

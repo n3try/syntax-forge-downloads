@@ -1,37 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#171717" />
-    <meta name="description" content="Download Syntax Forge, a local Windows app with complete courses for Python, JavaScript, TypeScript, Go, C++, C#, Lua, and the Linux terminal." />
-    <meta property="og:title" content="Syntax Forge | Learn by writing code" />
-    <meta property="og:description" content="153 local coding lessons, real program output, guided courses, projects, quizzes, and runtime setup." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://n3try.github.io/syntax-forge-downloads/" />
-    <meta property="og:image" content="https://n3try.github.io/syntax-forge-downloads/assets/og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Syntax Forge | Learn by writing code" />
-    <meta name="twitter:description" content="A local Windows learning workspace for eight programming courses." />
-    <meta name="twitter:image" content="https://n3try.github.io/syntax-forge-downloads/assets/og.png" />
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171717">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'">
+    <meta name="description" content="Download Syntax Forge, a local Windows app with complete courses for Python, JavaScript, TypeScript, Go, C++, C#, Lua, and the Linux terminal.">
+    <link rel="canonical" href="https://n3try.github.io/syntax-forge-downloads/">
+    <meta property="og:title" content="Syntax Forge | Learn by writing code">
+    <meta property="og:description" content="153 local coding lessons, real program output, guided courses, projects, quizzes, and runtime setup.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://n3try.github.io/syntax-forge-downloads/">
+    <meta property="og:image" content="https://n3try.github.io/syntax-forge-downloads/assets/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Syntax Forge | Learn by writing code">
+    <meta name="twitter:description" content="A local Windows learning workspace for eight programming courses.">
+    <meta name="twitter:image" content="https://n3try.github.io/syntax-forge-downloads/assets/og.png">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
     <title>Syntax Forge | Download for Windows</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Syntax Forge home">
+      <a class="brand" href="./" aria-label="Syntax Forge home">
         <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
         <span><strong>Syntax Forge</strong><small>Learning workspace</small></span>
       </a>
-      <nav aria-label="Main navigation">
+      <nav aria-label="Primary navigation">
         <a href="#courses">Courses</a>
         <a href="#how-it-works">Setup</a>
-        <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest">Release notes</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest">Downloads</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> Windows desktop app</p>
@@ -47,17 +52,18 @@
               <small>Already installed?</small>
             </a>
           </div>
-          <p class="action-status" id="action-status" aria-live="polite">Windows 10 or 11 · 64-bit · No account required</p>
+          <p class="action-status" id="action-status" role="status" aria-live="polite" aria-atomic="true">Windows 10 or 11 · 64-bit · No account required</p>
           <div class="release-links">
             <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest/download/Syntax.Forge.Setup.exe">Offline installer</a>
             <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest/download/Syntax.Forge.Portable.exe">Portable app</a>
             <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest/download/SHA256SUMS.txt">Checksums</a>
           </div>
+          <p class="download-notice">By downloading or using Syntax Forge, you agree to the <a href="terms.html">Terms of Use</a>. See the <a href="privacy.html">Privacy Policy</a> for what stays local and what GitHub receives.</p>
         </div>
 
         <figure class="product-shot">
           <div class="window-bar"><span></span><span>Syntax Forge</span><i></i></div>
-          <img src="assets/syntax-forge-home.png" alt="Syntax Forge home screen showing eight courses, progress, environment status, and the next Python lesson" />
+          <img src="assets/syntax-forge-home.png" alt="Syntax Forge home screen showing eight courses, progress, environment status, and the next Python lesson">
           <figcaption>Everything runs from a guarded workspace on your own computer.</figcaption>
         </figure>
       </section>
@@ -113,11 +119,14 @@
     </main>
 
     <footer class="site-footer">
-      <span>Syntax Forge</span>
-      <div>
+      <span>© 2026 Syntax Forge</span>
+      <nav aria-label="Legal and project links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
         <a href="https://github.com/n3try/syntax-forge-downloads">GitHub</a>
         <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest">All downloads</a>
-      </div>
+      </nav>
     </footer>
 
     <script src="app.js"></script>

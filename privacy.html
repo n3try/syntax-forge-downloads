@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171717">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'">
+    <meta name="description" content="How the Syntax Forge website and Windows app handle local progress, downloads, updates, cloud accounts, and personal information.">
+    <link rel="canonical" href="https://n3try.github.io/syntax-forge-downloads/privacy.html">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>Privacy Policy | Syntax Forge</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Syntax Forge home">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span><strong>Syntax Forge</strong><small>Learning workspace</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./#courses">Courses</a>
+        <a href="./#how-it-works">Setup</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest">Downloads</a>
+      </nav>
+    </header>
+
+    <main class="policy-main" id="main-content" tabindex="-1">
+      <header class="policy-heading">
+        <p class="eyebrow"><span></span> POLICY</p>
+        <h1>Privacy Policy</h1>
+        <p>This policy explains what happens to information when you visit the Syntax Forge website, download a release, or use the current public Windows app.</p>
+        <div class="policy-meta"><span>Effective: August 28, 2026</span><span>Last updated: August 28, 2026</span></div>
+      </header>
+
+      <aside class="policy-summary" aria-labelledby="privacy-summary-title">
+        <strong id="privacy-summary-title">The short version</strong>
+        <p>The website has no project-run analytics, advertising, account form, or payment system. Course progress and lesson code stay on your computer in the current public build. GitHub hosts the site and downloads, so GitHub receives ordinary network and service data when you visit or download.</p>
+      </aside>
+
+      <div class="policy-content">
+        <section aria-labelledby="operator-title">
+          <h2 id="operator-title">1. Who operates Syntax Forge</h2>
+          <p>Syntax Forge is an independently maintained software project published through the GitHub account <a href="https://github.com/n3try">n3try</a>. In this policy, “Syntax Forge,” “we,” and “us” refer to that project maintainer.</p>
+        </section>
+
+        <section aria-labelledby="scope-title">
+          <h2 id="scope-title">2. What this policy covers</h2>
+          <p>This policy covers the website at <a href="https://n3try.github.io/syntax-forge-downloads/">n3try.github.io/syntax-forge-downloads</a> and the official Syntax Forge desktop releases linked from it. A third-party website, runtime, or service has its own policy.</p>
+        </section>
+
+        <section aria-labelledby="data-title">
+          <h2 id="data-title">3. Information handling</h2>
+          <div class="policy-table-wrap" tabindex="0" role="region" aria-label="Information handling table">
+            <table class="policy-table">
+              <caption>What happens in each part of the service</caption>
+              <tbody>
+                <tr><th scope="row">Website</th><td>The site does not contain a project-run account form, contact form, analytics script, advertising tracker, or payment system. We do not receive a visitor database from the site.</td></tr>
+                <tr><th scope="row">Hosting and downloads</th><td>GitHub Pages and GitHub Releases deliver the site and files. GitHub may process IP address, device and browser details, request time, pages visited, download requests, cookies, and security logs under its own policies.</td></tr>
+                <tr><th scope="row">Course progress</th><td>The current public app saves completed lessons, XP, streaks, preferences, and achievements in a local <code>progress.json</code> file inside the app data folder for your Windows account.</td></tr>
+                <tr><th scope="row">Lesson code</th><td>Files you write in lessons stay in <code>Documents\Syntax Forge Workspace</code>. The current public build does not upload those files.</td></tr>
+                <tr><th scope="row">Updates</th><td>The installed app contacts the public GitHub Releases feed to check for and download updates. The request does not include course progress, but GitHub receives ordinary network metadata such as an IP address.</td></tr>
+                <tr><th scope="row">Runtime installs</th><td>If you choose a guided runtime install, the app starts Microsoft WinGet. Microsoft and the selected package source or software publisher may receive ordinary installation and network data under their own policies.</td></tr>
+                <tr><th scope="row">Cloud accounts</th><td>Google sign-in and cloud sync are not configured in the current public release, so the app does not currently send account or progress data to Google or a Syntax Forge cloud database.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-labelledby="cookies-title">
+          <h2 id="cookies-title">4. Cookies and tracking</h2>
+          <p>Syntax Forge does not add its own cookies, analytics pixels, advertising SDKs, or cross-site tracking code to this website. GitHub may use cookies and similar technologies while providing GitHub Pages and Releases. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies">GitHub Cookies notice</a>.</p>
+          <p>We do not sell personal information or share it for cross-context behavioral advertising.</p>
+        </section>
+
+        <section aria-labelledby="use-title">
+          <h2 id="use-title">5. Why information is used</h2>
+          <p>Local app data is used to show your progress, continue lessons, remember learning preferences, and operate the software. GitHub-hosted requests are used by GitHub to deliver and secure the website and release files. WinGet requests are used to install software only after you choose an install action.</p>
+        </section>
+
+        <section aria-labelledby="retention-title">
+          <h2 id="retention-title">6. Storage, retention, and deletion</h2>
+          <p>Because the current public build does not operate a cloud account database, Syntax Forge does not retain a server copy of your course progress or code. Local files remain until you remove them. Uninstalling an app may leave user data behind, so delete the Syntax Forge app data folder and <code>Documents\Syntax Forge Workspace</code> if you also want to remove local progress and lesson files.</p>
+          <p>GitHub controls retention of its hosting, security, and download logs. Requests involving that data must be directed to GitHub.</p>
+        </section>
+
+        <section aria-labelledby="security-title">
+          <h2 id="security-title">7. Security</h2>
+          <p>The site and release downloads use HTTPS through GitHub. Published releases include SHA-256 checksums so you can verify file integrity. No internet service or local application can promise perfect security.</p>
+          <p class="policy-callout">The current Windows installer is not Authenticode-signed. Windows may display an “Unknown publisher” warning. Download only from the official release links on this site.</p>
+        </section>
+
+        <section aria-labelledby="children-title">
+          <h2 id="children-title">8. Children’s privacy</h2>
+          <p>The current website and public app do not ask for personal information or enable cloud accounts. We do not knowingly collect personal information directly from children under 13. A parent or guardian should supervise a child’s installation of runtimes, execution of downloaded software, and use of external links.</p>
+          <p>If cloud accounts are enabled in a future release, this policy and the product’s age handling must be updated before personal information from children is collected.</p>
+        </section>
+
+        <section aria-labelledby="rights-title">
+          <h2 id="rights-title">9. Privacy choices and requests</h2>
+          <p>You can use the current app without an account. You can stop update checks by closing the app, and you control whether to start a runtime installation. You can delete local progress and workspace files from your computer at any time.</p>
+          <p>For a privacy question, open an item in the <a href="https://github.com/n3try/syntax-forge-downloads/issues/new">project issue tracker</a>. Issues are public, so do not post an email address, account identifier, or other sensitive information. Ask the maintainer for a private contact method if your request requires one.</p>
+        </section>
+
+        <section aria-labelledby="future-title">
+          <h2 id="future-title">10. Future cloud accounts</h2>
+          <p>The app contains support for optional Google sign-in and Supabase-backed progress sync, but those services are not configured in the current public build. Before they are activated, this policy must be revised to name the providers and disclose the account fields, synced progress fields, legal basis, retention period, deletion process, security measures, and any international data transfers.</p>
+        </section>
+
+        <section aria-labelledby="changes-title">
+          <h2 id="changes-title">11. Changes to this policy</h2>
+          <p>Material changes will be posted on this page with a new “Last updated” date. Check this page when a release adds accounts, analytics, payments, or another network service.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Syntax Forge</span>
+      <nav aria-label="Legal and project links">
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="https://github.com/n3try/syntax-forge-downloads">GitHub</a>
+        <a href="https://github.com/n3try/syntax-forge-downloads/releases/latest">All downloads</a>
+      </nav>
+    </footer>
+  </body>
+</html>
