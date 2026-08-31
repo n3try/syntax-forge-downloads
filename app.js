@@ -6,7 +6,7 @@ let launchTimer
 
 openButton.addEventListener('click', () => {
   window.clearTimeout(launchTimer)
-  status.textContent = 'Asking Windows to open Syntax Forge…'
+  status.textContent = 'Asking Windows to open Syntaxi…'
   status.classList.add('active')
   launchTimer = window.setTimeout(() => {
     status.textContent = 'If nothing opened, install the latest version first, then try again.'

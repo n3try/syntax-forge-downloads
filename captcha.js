@@ -14,7 +14,7 @@
 
   if (!/^0x[A-Za-z0-9_-]{10,100}$/.test(sitekey) || !/^[A-Za-z0-9_-]{20,100}$/.test(nonce) || !allowedPurposes.has(purpose)) {
     container.hidden = true
-    fail('Missing or invalid verification settings. Close this window and try again from the Syntax Forge app.')
+    fail('Missing or invalid verification settings. Close this window and try again from the Syntaxi app.')
     return
   }
 
@@ -26,7 +26,7 @@
           theme: 'dark',
           appearance: 'always',
           callback: (token) => {
-            status.textContent = 'Verified. Returning to Syntax Forge…'
+            status.textContent = 'Verified. Returning to Syntaxi…'
             const callback = new URL('syntaxforge://captcha/callback')
             callback.searchParams.set('nonce', nonce)
             callback.searchParams.set('purpose', purpose)
