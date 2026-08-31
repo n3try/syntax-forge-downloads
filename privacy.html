@@ -32,12 +32,12 @@
         <p class="eyebrow"><span></span> POLICY</p>
         <h1>Privacy Policy</h1>
         <p>This policy explains what happens to information when you visit the Syntax Forge website, download a release, or use the current public Windows app.</p>
-        <div class="policy-meta"><span>Effective: August 28, 2026</span><span>Last updated: August 28, 2026</span></div>
+        <div class="policy-meta"><span>Effective: August 30, 2026</span><span>Last updated: August 30, 2026</span></div>
       </header>
 
       <aside class="policy-summary" aria-labelledby="privacy-summary-title">
         <strong id="privacy-summary-title">The short version</strong>
-        <p>The website has no project-run analytics, advertising, account form, or payment system. Course progress and lesson code stay on your computer in the current public build. GitHub hosts the site and downloads, so GitHub receives ordinary network and service data when you visit or download.</p>
+        <p>Accounts are optional. If you create one, Supabase stores your email, display name, a protected password hash, and course progress. Lesson code stays on your computer. Cloudflare Turnstile helps block automated abuse. The site has no project-run advertising or analytics.</p>
       </aside>
 
       <div class="policy-content">
@@ -59,11 +59,12 @@
               <tbody>
                 <tr><th scope="row">Website</th><td>The site does not contain a project-run account form, contact form, analytics script, advertising tracker, or payment system. We do not receive a visitor database from the site.</td></tr>
                 <tr><th scope="row">Hosting and downloads</th><td>GitHub Pages and GitHub Releases deliver the site and files. GitHub may process IP address, device and browser details, request time, pages visited, download requests, cookies, and security logs under its own policies.</td></tr>
-                <tr><th scope="row">Course progress</th><td>The current public app saves completed lessons, XP, streaks, preferences, and achievements in a local <code>progress.json</code> file inside the app data folder for your Windows account.</td></tr>
+                <tr><th scope="row">Course progress</th><td>The app saves completed lessons, XP, streaks, preferences, and achievements locally. If you sign in, those fields are also synced to the Syntax Forge Supabase project so you can continue on another computer.</td></tr>
                 <tr><th scope="row">Lesson code</th><td>Files you write in lessons stay in <code>Documents\Syntax Forge Workspace</code>. The current public build does not upload those files.</td></tr>
                 <tr><th scope="row">Updates</th><td>The installed app contacts the public GitHub Releases feed to check for and download updates. The request does not include course progress, but GitHub receives ordinary network metadata such as an IP address.</td></tr>
                 <tr><th scope="row">Runtime installs</th><td>If you choose a guided runtime install, the app starts Microsoft WinGet. Microsoft and the selected package source or software publisher may receive ordinary installation and network data under their own policies.</td></tr>
-                <tr><th scope="row">Cloud accounts</th><td>Google sign-in and cloud sync are not configured in the current public release, so the app does not currently send account or progress data to Google or a Syntax Forge cloud database.</td></tr>
+                <tr><th scope="row">Cloud accounts</th><td>Supabase Auth processes your email, display name, account identifiers, authentication records, and a salted password hash. Syntax Forge does not receive or store a readable password. Google sign-in may be offered as an optional alternative in a later build.</td></tr>
+                <tr><th scope="row">Abuse prevention</th><td>Cloudflare Turnstile processes ordinary device, browser, network, and challenge information when you create an account, sign in, or request a password reset. The result is used only to determine whether the request appears automated.</td></tr>
               </tbody>
             </table>
           </div>
@@ -71,42 +72,42 @@
 
         <section aria-labelledby="cookies-title">
           <h2 id="cookies-title">4. Cookies and tracking</h2>
-          <p>Syntax Forge does not add its own cookies, analytics pixels, advertising SDKs, or cross-site tracking code to this website. GitHub may use cookies and similar technologies while providing GitHub Pages and Releases. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies">GitHub Cookies notice</a>.</p>
+          <p>Syntax Forge does not add advertising SDKs or project-run analytics to this website. GitHub may use cookies and similar technologies while providing GitHub Pages and Releases. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies">GitHub Cookies notice</a>.</p>
+          <p>Cloudflare Turnstile may store or access information needed for security and bot detection. See the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>. Supabase processes account and database information under its <a href="https://supabase.com/privacy">Privacy Policy</a>.</p>
           <p>We do not sell personal information or share it for cross-context behavioral advertising.</p>
         </section>
 
         <section aria-labelledby="use-title">
           <h2 id="use-title">5. Why information is used</h2>
-          <p>Local app data is used to show your progress, continue lessons, remember learning preferences, and operate the software. GitHub-hosted requests are used by GitHub to deliver and secure the website and release files. WinGet requests are used to install software only after you choose an install action.</p>
+          <p>Local and synced progress is used to show your progress, continue lessons, remember learning preferences, and operate the software. Account data is used to authenticate you, verify your email, recover your account, secure the service, and associate synced progress with your account. GitHub-hosted requests deliver the website, releases, and updates. WinGet requests install software only after you choose an install action.</p>
         </section>
 
         <section aria-labelledby="retention-title">
           <h2 id="retention-title">6. Storage, retention, and deletion</h2>
-          <p>Because the current public build does not operate a cloud account database, Syntax Forge does not retain a server copy of your course progress or code. Local files remain until you remove them. Uninstalling an app may leave user data behind, so delete the Syntax Forge app data folder and <code>Documents\Syntax Forge Workspace</code> if you also want to remove local progress and lesson files.</p>
+          <p>Account details and synced progress remain in Supabase while your account exists. You can delete the cloud account from the Account page in the app. That removes the authentication account and its synced progress. Local files remain until you remove them. Uninstalling may leave user data behind, so delete the Syntax Forge app data folder and <code>Documents\Syntax Forge Workspace</code> if you also want to remove local progress and lesson files.</p>
           <p>GitHub controls retention of its hosting, security, and download logs. Requests involving that data must be directed to GitHub.</p>
         </section>
 
         <section aria-labelledby="security-title">
           <h2 id="security-title">7. Security</h2>
-          <p>The site and release downloads use HTTPS through GitHub. Published releases include SHA-256 checksums so you can verify file integrity. No internet service or local application can promise perfect security.</p>
+          <p>The site and release downloads use HTTPS through GitHub. Supabase protects account passwords with salted password hashing, and database row-level security restricts signed-in users to their own progress record. Desktop sessions are encrypted with Windows secure storage. Published releases include SHA-256 checksums so you can verify file integrity. No internet service or local application can promise perfect security.</p>
           <p class="policy-callout">The current Windows installer is not Authenticode-signed. Windows may display an “Unknown publisher” warning. Download only from the official release links on this site.</p>
         </section>
 
         <section aria-labelledby="children-title">
           <h2 id="children-title">8. Children’s privacy</h2>
-          <p>The current website and public app do not ask for personal information or enable cloud accounts. We do not knowingly collect personal information directly from children under 13. A parent or guardian should supervise a child’s installation of runtimes, execution of downloaded software, and use of external links.</p>
-          <p>If cloud accounts are enabled in a future release, this policy and the product’s age handling must be updated before personal information from children is collected.</p>
+          <p>Syntax Forge is a general-audience learning tool, but cloud accounts are not intended for children under 13. We do not knowingly collect account information from a child under 13. A parent or guardian should supervise a child’s use of the app, installation of runtimes, execution of downloaded software, and use of external links. Contact the maintainer if you believe a child under 13 created an account so it can be deleted.</p>
         </section>
 
         <section aria-labelledby="rights-title">
           <h2 id="rights-title">9. Privacy choices and requests</h2>
-          <p>You can use the current app without an account. You can stop update checks by closing the app, and you control whether to start a runtime installation. You can delete local progress and workspace files from your computer at any time.</p>
+          <p>You can use the app without an account. You can delete a cloud account and synced progress from the Account page. You can delete local progress and workspace files from your computer at any time. You can stop update checks by closing the app, and you control whether to start a runtime installation.</p>
           <p>For a privacy question, open an item in the <a href="https://github.com/n3try/syntax-forge-downloads/issues/new">project issue tracker</a>. Issues are public, so do not post an email address, account identifier, or other sensitive information. Ask the maintainer for a private contact method if your request requires one.</p>
         </section>
 
         <section aria-labelledby="future-title">
-          <h2 id="future-title">10. Future cloud accounts</h2>
-          <p>The app contains support for optional Google sign-in and Supabase-backed progress sync, but those services are not configured in the current public build. Before they are activated, this policy must be revised to name the providers and disclose the account fields, synced progress fields, legal basis, retention period, deletion process, security measures, and any international data transfers.</p>
+          <h2 id="future-title">10. Service providers and location</h2>
+          <p>GitHub hosts the website and releases, Supabase provides authentication and cloud storage, and Cloudflare provides Turnstile abuse prevention. The current Supabase project is hosted in the United States. These providers may process information in other locations described in their policies. Optional Google sign-in, if enabled, is also governed by Google’s privacy policy.</p>
         </section>
 
         <section aria-labelledby="changes-title">

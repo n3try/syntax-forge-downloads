@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-const pages = ['/', '/privacy.html', '/terms.html', '/accessibility.html']
+const pages = ['/', '/privacy.html', '/terms.html', '/accessibility.html', '/captcha.html']
 
 test.use({ channel: 'chrome' })
 
